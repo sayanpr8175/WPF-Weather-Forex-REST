@@ -23,3 +23,4 @@ C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrenc
 C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\obj\Debug\net8.0-windows\App.baml
 C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\obj\Debug\net8.0-windows\WeatherC.2B0FD170.Up2Date
 C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\obj\Debug\net8.0-windows\WeatherCurrencyDesktopApp_my_wpf_proj.sourcelink.json
