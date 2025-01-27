@@ -3,6 +3,7 @@ using System.Data;
 using System.Net.Http;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 
 namespace WeatherCurrencyDesktopApp_my_wpf_proj
 {
@@ -45,7 +46,7 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
                     {
                         var ResponseString = await response.Content.ReadAsStringAsync();
                         var ResponseObject = JsonConvert.DeserializeObject<WeatherForecast>(ResponseString);
-                        MessageBox.Show("ForeCast for today: \n" + ResponseObject.DailyForecasts, "Information",
+                        MessageBox.Show("ForeCast for today: \n" + ResponseObject.DailyForecasts.ToString(), "Information",
                             MessageBoxButton.OK, MessageBoxImage.Information);
 
                         return ResponseObject;
@@ -195,6 +196,21 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
             txtCurrency.Text = String.Empty;
             cmbFromCurrency.SelectedIndex = 0;
             cmbToCurrency.SelectedIndex = 0;
+        }
+
+        private void btnSayan_Click(object sender, RoutedEventArgs e)
+        {
+            myImageIcon.Source = new BitmapImage(new Uri("C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\icons\\dummy.png")); ;
+        }
+
+        private void Check_Weather(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Weather is cold");
+        }
+
+        private void PlaceSearchTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
         }
     }
 }

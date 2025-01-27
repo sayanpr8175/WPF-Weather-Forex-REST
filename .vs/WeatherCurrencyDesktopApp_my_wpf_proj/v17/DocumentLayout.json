@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\forecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\forecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\forecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\forecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\dailyforecasts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\dailyforecasts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|solutionrelative:weathercurrencydesktopapp_my_wpf_proj\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AA035D2-8494-43CB-ABC8-8C21361317EE}|WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj.csproj|c:\\users\\sayan\\source\\repos\\weathercurrencydesktopapp_my_wpf_proj\\weathercurrencydesktopapp_my_wpf_proj\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml",
@@ -54,29 +54,31 @@
               "RelativeToolTip": "WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-16T23:49:01.987Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml.cs",
               "RelativeToolTip": "WeatherCurrencyDesktopApp_my_wpf_proj\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwDAAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T23:48:57.568Z"
+              "WhenOpened": "2025-01-16T23:48:57.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "forecast.cs",
               "DocumentMoniker": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\forecast.cs",
               "RelativeDocumentMoniker": "WeatherCurrencyDesktopApp_my_wpf_proj\\forecast.cs",
               "ToolTip": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\forecast.cs",
               "RelativeToolTip": "WeatherCurrencyDesktopApp_my_wpf_proj\\forecast.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwHAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAqwHAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T15:56:47.06Z",
               "EditorCaption": ""
@@ -91,11 +93,12 @@
               "RelativeToolTip": "WeatherCurrencyDesktopApp_my_wpf_proj\\DailyForecasts.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T15:59:12.49Z"
+              "WhenOpened": "2025-01-19T15:59:12.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Root.cs",
               "DocumentMoniker": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\Root.cs",
               "RelativeDocumentMoniker": "WeatherCurrencyDesktopApp_my_wpf_proj\\Root.cs",
@@ -138,7 +141,8 @@
               "ToolTip": "C:\\Users\\sayan\\source\\repos\\WeatherCurrencyDesktopApp_my_wpf_proj\\WeatherCurrencyDesktopApp_my_wpf_proj\\App.xaml",
               "RelativeToolTip": "WeatherCurrencyDesktopApp_my_wpf_proj\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T03:06:03.628Z"
+              "WhenOpened": "2025-01-17T03:06:03.628Z",
+              "EditorCaption": ""
             }
           ]
         }

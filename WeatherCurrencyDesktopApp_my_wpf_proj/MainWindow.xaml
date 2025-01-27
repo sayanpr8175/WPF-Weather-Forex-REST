@@ -7,19 +7,23 @@
         mc:Ignorable="d"
         Title="Weather Checker and Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Height="750" Width="1000"
         Icon="C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\icons\myprofilepic.ico"
-        MinHeight="500" MinWidth="1000">
+        MinHeight="800" MinWidth="1000">
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="80"/>
             <RowDefinition Height="150"/>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="110"/>
+
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="50"/>
 
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="2" Width="900" CornerRadius="10" BorderThickness="5" Margin="10">
+        <Border Grid.Row="2" CornerRadius="10" BorderThickness="5" Margin="50,10,50,10">
 
             <Border.BorderBrush>
 
@@ -44,11 +48,10 @@
             </Rectangle>
         </Border>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Height="50" Width="1000" VerticalAlignment="Center">
-            <Label Height="50" Width="1000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Currency Converter" FontSize="25" Foreground="#ec2075" FontWeight="Bold"></Label>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="50" Width="1000" VerticalAlignment="Center">
+            <Label Height="50" Width="1000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Convert Currencies and Search Weather by locations" FontSize="25" Foreground="#ec2075" FontWeight="Bold"></Label>
         </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" Height="80" Width="1000">
-            <Label Height="40" Width="1000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Converted Currency" FontSize="20"></Label>
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" Width="1000">
             <Label Name="lblCurrency" Height="40" Width="1000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Height="60" Width="800">
@@ -56,13 +59,13 @@
             <Label Height="40" Width="150" Content="From : " Margin="110 0 0 0" VerticalAlignment="Bottom" Foreground="White" FontSize="20"></Label>
             <Label Height="40" Width="150" Content="To : " Margin="130 0 0 0" VerticalAlignment="Bottom" Foreground="White" FontSize="20"></Label>
         </StackPanel>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Height="90" Width="800" VerticalAlignment="Bottom">
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Height="90" Width="800" VerticalAlignment="Top" Margin="0,60,0,0">
             <TextBox Name="txtCurrency" Width="200" Height="30" Margin="40 0 0 0" PreviewTextInput="NumberValidationTextBox" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top"></TextBox>
             <ComboBox Name="cmbFromCurrency" Width="170" Height="30" Margin="60 0 40 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150"></ComboBox>
             <fa:ImageAwesome Icon="Exchange" Height="30" Width="30" Foreground="White" VerticalAlignment="Top"></fa:ImageAwesome>
             <ComboBox Name="cmbToCurrency" Width="170" Height="30" Margin="40 0 0 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" MaxDropDownHeight="150"></ComboBox>
         </StackPanel>
-        <StackPanel Grid.Row="3" Height="100" Width="1000" Orientation="Horizontal">
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
             <Button Name="Convert" Height="40" Width="150" Content="Convert" Click="Convert_Click" Margin="350 0 20 0" Foreground="White" FontSize="20" Style="{StaticResource ButtonRound}">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
@@ -80,8 +83,27 @@
                 </Button.Background>
             </Button>
         </StackPanel>
+
         <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-            <Image Name="myImageIcon"  Height="100" Width="100" Source="C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\icons\myIcon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+            <Button x:Name="btnSayan" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnSayan_Click">
+                <Image Name="myImageIcon" Height="100" Width="100" Source="C:\Users\sayan\source\repos\WeatherCurrencyDesktopApp_my_wpf_proj\WeatherCurrencyDesktopApp_my_wpf_proj\icons\myIcon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Orientation="Vertical" HorizontalAlignment="Center" Width="1000">
+            <Label Name="WeatherResultsOutput" Height="50" Width="1000" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Results from weather search:" FontSize="20"></Label>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Height="90" Width="800" VerticalAlignment="Top" Margin="0,51,0,0" Grid.RowSpan="2">
+            <TextBox Name="PlaceSearchTextBox" Width="250" Height="40" Margin="60 30 0 0" FontSize="18" VerticalContentAlignment="Center" VerticalAlignment="Top" TextChanged="PlaceSearchTextBox_TextChanged"></TextBox>
+            <Button Name="weatherButton" Height="40" Width="200" Content="Check Weather" Click="Check_Weather" Margin="250 0 20 0" Foreground="White" FontSize="20" Style="{StaticResource ButtonRound}">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#FF0474F7" Offset="0.0"/>
+                        <GradientStop Color="#1ef7ec" Offset="0.6"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </StackPanel>
 
     </Grid>
