@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeatherCurrencyDesktopApp_my_wpf_proj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cd6ae5382a3ff39cff6a0a0f50b3a59e09268ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+503a626c6d16ca2b07d067fa0c968faaed9daccd")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeatherCurrencyDesktopApp_my_wpf_proj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeatherCurrencyDesktopApp_my_wpf_proj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
