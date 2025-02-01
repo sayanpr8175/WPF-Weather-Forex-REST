@@ -27,10 +27,27 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
         private async void GetValue()
         {
             val = await GetDataFromAPI<Root>("https://openexchangerates.org/api/latest.json?app_id=f62d206545cd45118e4ca88595528c8d");
-            foreCastFromAccuweather = await getDataForWeather<WeatherForecast>("http://dataservice.accuweather.com/forecasts/v1/daily/1day/348735?apikey=BucRGwO0IJcRnzxZhZAv01TWTqQhlhX2");
+            
             bindCurrencyFrom();
             bindCurrencyTo();
         }
+
+
+        private async void GetweatherDetails(string locationToBeSearched)
+        {
+            List<LocationDetails> loactionList = await getLocationData<List<LocationDetails>>("http://dataservice.accuweather.com/locations/v1/cities/search?apikey=BucRGwO0IJcRnzxZhZAv01TWTqQhlhX2&q="+ locationToBeSearched.ToString());
+
+            var locationId = loactionList[0].Key.ToString();
+
+            foreCastFromAccuweather = await getDataForWeather<WeatherForecast>("http://dataservice.accuweather.com/forecasts/v1/daily/1day/" + locationId + "?apikey=BucRGwO0IJcRnzxZhZAv01TWTqQhlhX2");
+
+            WeatherResultsOutput.Content =
+                foreCastFromAccuweather.DailyForecasts[0].Date.ToString()+
+                foreCastFromAccuweather.Headline.Text.ToString()
+                + foreCastFromAccuweather.DailyForecasts[0].Temperature.Maximum.Value.ToString() 
+                + foreCastFromAccuweather.DailyForecasts[0].Temperature.Maximum.Unit.ToString();
+        }
+
 
         public static async Task<WeatherForecast> getDataForWeather<T>(string url)
         {
@@ -51,11 +68,8 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
 
                         return ResponseObject;
                     }
-
                 }
-
                 return AccuweatherForeCast;
-
             }
             catch
             {
@@ -64,6 +78,43 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
 
             return AccuweatherForeCast;
         }
+
+
+        public static async Task<List<LocationDetails>> getLocationData<T>(string url)
+        {
+            LocationDetails LocationForForeCast = new LocationDetails();
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    client.Timeout = TimeSpan.FromMinutes(1);
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        var ResponseString = await response.Content.ReadAsStringAsync();
+                        var ResponseObject = JsonConvert.DeserializeObject<List<LocationDetails>>(ResponseString);
+                        
+                        /*
+                         MessageBox.Show("ForeCast for today: \n" + ResponseObject.ToString(), "Information",
+                            MessageBoxButton.OK, MessageBoxImage.Information);
+                        */
+
+                        return ResponseObject;
+                    }
+
+                }
+                return null;
+            }
+            catch
+            {
+
+            }
+
+            return null;
+        }
+
+
 
         public static async Task<Root> GetDataFromAPI<T>(string url)
         {
@@ -79,8 +130,11 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
                     {
                         var ResponseString = await response.Content.ReadAsStringAsync();
                         var ResponseObject = JsonConvert.DeserializeObject<Root>(ResponseString);
+                        
+                        /*
                         MessageBox.Show("license: \n" + ResponseObject.license, "Information", 
                             MessageBoxButton.OK, MessageBoxImage.Information);
+                        */
 
                         return ResponseObject;
                     }
@@ -205,7 +259,9 @@ namespace WeatherCurrencyDesktopApp_my_wpf_proj
 
         private void Check_Weather(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Weather is cold");
+            string location = PlaceSearchTextBox.Text.ToString();
+
+            GetweatherDetails(location);
         }
 
         private void PlaceSearchTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
