@@ -3,7 +3,7 @@
 ### Don't forget the logo --- that's me😁.
 
   <a href="https://github.com/sayanpr8175/WPF-Weather-Forex-REST">
-    <img src="./WeatherCurrencyDesktopApp_my_wpf_proj/readmeDocsResources/myDotNetWPFCurrencyForexAPPSnapshot.PNG" alt="App Preview" width="700" height="400">
+    <img src="./WeatherCurrencyDesktopApp_my_wpf_proj/readmeDocsResources/myDotNetWPFCurrencyForexAPPSnapshotUpdatedWithWeather.PNG" alt="App Preview" width="841" height="662">
   </a>
 
 ### How it appears on the start bar
